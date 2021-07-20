@@ -7,19 +7,26 @@
 }
 
 body {
+  max-width: 1440px;
+  width: 100%;
   color: #fff;
   font-family: "Lexend Deca", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  width: 60%;
-  margin: 100px auto 50px;
+main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .content {
-  margin: 40px;
+  height: 100%;
+  padding: 10%;
 }
 
 #sedans {
@@ -69,4 +76,5 @@ button {
 button:hover {
   opacity: 0.8;
   cursor: pointer;
+  transition: 1s;
 }
